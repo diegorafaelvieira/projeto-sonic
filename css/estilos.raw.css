@@ -1,0 +1,229 @@
+/* Estilos Gerais */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 5px;
+  text-indent: 1.5em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+.subtitulo {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #d20000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+.subtitulo:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #d20000;
+  margin: 8px auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  background: url("../img/sonicBanner.jpg");
+  padding: 15px 0px;
+  z-index: 10;
+}
+
+.header img {
+  margin-top: 40px;
+}
+
+.header_menu {
+  text-align: right;
+}
+
+.header_menu ul li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 90px;
+}
+
+.header_menu ul li a {
+  color: #fff;
+  text-shadow: 1px 1px 1px black;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 10px;
+}
+
+.header_menu ul li a:hover {
+  color: #ffe226;
+}
+
+.historia {
+  margin-top: 220px;
+}
+
+.call {
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  clear: both;
+}
+
+.botao {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 3px solid #001478;
+  color: #001478;
+  padding: 10px 30px;
+}
+
+.botao:hover {
+  background-color: #001478;
+  border-color: #001478;
+  color: #fff;
+}
+
+footer {
+  height: 180px; /*180*/
+  background-color: #d20000;
+}
+
+footer p {
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+footer h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 6px 0px 12px 0px;
+}
+
+footer h3 {
+  font-size: 22px;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.quote-externo p:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 14px auto 10px auto;
+}
+
+.redes ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.redes ul li a {
+  border: 3px solid #fff;
+  display: block;
+  padding: 10px;
+}
+
+.redes ul li a:hover {
+  border-color: #ffe226;
+}
+
+.copy {
+  background-color: #001478;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.copy a {
+  color: #fff;
+}
+
+.copy a:hover {
+  text-decoration: underline;
+}
+
+/* JAVASCRIPT */
+/* Adicione o CSS Essencial abaixo */
+.js [data-slide] {
+  position: relative;
+}
+
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+/* CSS recomendado para a navegação */
+.js [data-slide-nav] {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.js [data-slide-nav] button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  border: none;
+  padding: 0px;
+  border-radius: 6px;
+  text-indent: -99px;
+  overflow: hidden;
+  background: #773818;
+}
+
+.js [data-slide-nav] button.active {
+  background: #fec63e;
+}
+
+/* Adicione o CSS Essêncial abaixo */
+.js [data-anime] {
+  opacity: 0;
+}
+
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: opacity 800ms, transform 800ms;
+}

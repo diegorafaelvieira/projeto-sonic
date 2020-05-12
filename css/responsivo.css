@@ -1,0 +1,30 @@
+/* RESPONSIVIDADE */
+/* 788px ESTILO -> TABLET */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+
+	.header {
+		background: url("../img/sonicBanner.jpg") center no-repeat;
+	}
+		 /* Final do Estilo para TABLET */	
+}
+
+
+/* <= 787px ESTILO -> CELULAR  */
+@media only screen and (max-width: 787px) {
+
+	.header {
+		background: url("../img/bg.png") center no-repeat;
+	}
+
+	.mega img {
+		margin-left: 50px;
+		text-align: center;
+	}
+
+	footer {
+		height: auto;
+	}
+
+
+	/* Final do estilo para CELULAR */
+}
