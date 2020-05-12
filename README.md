@@ -1,2 +1,4 @@
 # projeto-sonic
- Projeto utilizando os conhecimentos do Curso de webdesign da Origamid
+ Projeto Landing Page utilizando os conhecimentos do Curso de webdesign da Origamid
+
+[SITE](https://diegorafaelvieira.github.io/projeto-sonic/) :desktop_computer: 
